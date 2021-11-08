@@ -1,0 +1,19 @@
+{
+  "name": "spyonamission",
+  "version": "1.0.0",
+  "description": "spy on a mission",
+  "main": "server.js",
+  "license": "MIT",
+  "homepage": "https://nightsailor.github.io/spy-on-a-mission",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d public",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "nodemon": "^2.0.14"
+  }
+}
