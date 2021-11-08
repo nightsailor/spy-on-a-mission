@@ -1,3 +1,5 @@
+let base_url = "/spy-on-a-mission";
+
 $("body").hover(function(){
     var myAudio = new Audio('aud/Dark _Atmosphere13_Looped_24bit.wav'); 
 myAudio.addEventListener('ended', function() {
@@ -71,5 +73,5 @@ $('div#centerDiv').css("display", "block").animate({
 
 $( "#brand img" ).click(function() {
   turnOff();
-  window.location.replace("/intro");
+  window.location.replace(base_url+"/intro");
 });

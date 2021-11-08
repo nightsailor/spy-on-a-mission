@@ -1,3 +1,5 @@
+let base_url = "/spy-on-a-mission";
+
 const soundAccepted = new Audio('https://thomaspark.co/projects/among-us-card-swipe/audio/CardAccepted.mp3');
 
 let cardsNeedsToBePicked = 9;
@@ -25,7 +27,7 @@ $( ".card" ).click(function() {
   if(cardsNeedsToBePicked == 0){
     
     function redirect() {
-      window.location.replace("/lights?switch=on");
+      window.location.replace(base_url+"/lights?switch=on");
     };
       window.setTimeout(redirect, 500);
   }

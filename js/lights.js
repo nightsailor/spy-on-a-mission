@@ -1,3 +1,5 @@
+let base_url = "/spy-on-a-mission";
+
 let bgText = document.getElementById("bg-text");
 let switches = document.querySelector(".switches");
 const switchSound = new Audio('https://www.soundjay.com/switch/sounds/switch-5.mp3');
@@ -98,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
       bgText.innerHTML = "<h1 id='count-down'>" + message + "</h1>";
 
       function redirect() {
-        window.location.replace(redirectUrl);
+        window.location.replace(base_url+redirectUrl);
       };
       window.setTimeout(redirect, 5000);
       return;

@@ -1,3 +1,5 @@
+let base_url = "/spy-on-a-mission";
+
 const card = document.getElementById('card');
 const reader = document.getElementById('reader');
 const cardIds = ['XA1','XB2','YC3','YD3','YC4','ZE5','ZE6','ZF6','ZF5'];
@@ -151,7 +153,7 @@ function setStatus(status) {
     document.removeEventListener('touchstart', dragStart);
     document.removeEventListener('touchend', dragEnd);
     document.removeEventListener('touchmove', drag);
-    window.location.replace("/");
+    window.location.replace(base_url+"/");
   }
   reader.dataset.status = status;
   playAudio(status);
@@ -166,7 +168,7 @@ function playAudio(status) {
 
   if (status === 'valid') {
     soundAccepted.play();
-    window.location.replace("/control-panel");
+    window.location.replace(base_url+"/control-panel");
   } else {
     soundDenied.play();
   }

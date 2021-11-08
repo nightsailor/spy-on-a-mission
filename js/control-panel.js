@@ -1,3 +1,5 @@
+let base_url = "/spy-on-a-mission";
+
 let bgText = document.getElementById("bg-text");
 let countDown = document.getElementById("count-down");
 let decrypt = document.querySelector(".decrypt");
@@ -97,7 +99,7 @@ const validateUserSequence = async (id) => {
       countDown.innerHTML = "You just lost The Game";
 
       await sleep(5000);
-      window.location.replace("/");
+      window.location.replace(base_url+"/");
       return;
     }
 
@@ -110,7 +112,7 @@ const validateUserSequence = async (id) => {
       bgText.innerHTML = "<h2>Congratulations!</h2></br><h1 class='error' id='count-down'>The ship is gonna blast!</h1>";
 
       await sleep(5000);
-      window.location.replace("/outro");
+      window.location.replace(base_url+"/outro");
       return;
     }
 
