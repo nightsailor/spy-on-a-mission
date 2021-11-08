@@ -1,0 +1,32 @@
+/* Position text in the middle of the page/image */
+#bg-text {
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+#count-down {
+  font-size: 50px;
+}
+
+.invalid {
+  border-color: red;
+}
+
+.error {
+  color: red
+}
+
+.green {
+  color: green;
+}

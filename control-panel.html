@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Card Crypt</title>
+	<link rel="stylesheet" type="text/css" href="css/control-panel.css" />
+</head>
+
+<body>
+	<audio src="aud/start.mp3" id="start-audio"></audio>
+	<audio src="aud/buzzer2.mp3" id="buzzer-audio"></audio>
+	<audio src="aud/buzzer.mp3" id="buzzer-audio1"></audio>
+	<audio src="aud/defeat.mp3" id="defeat-audio"></audio>
+	<audio src="aud/victory.mp3" id="victory-audio" preload="auto"></audio>
+	<div id="bg-text">
+		<h1 id="count-down"></h1>
+	</div>
+	<div class="decrypt">
+		<div class="top">
+			<section class="panel panel--up">
+				<ul class="indicators indicators--left">
+					<li id="li-1" class="indicator"></li>
+					<li id="li-2" class="indicator"></li>
+					<li id="li-3" class="indicator"></li>
+					<li id="li-4" class="indicator"></li>
+					<li id="li-5" class="indicator"></li>
+				</ul>
+			</section>
+		</div>
+		<div class="game">
+			<section class="panel panel--left">
+				<div id="inside-panel--left" class="inside-panel">
+					<div class="buttons buttons--left">
+						<button id="bl-1" class="button"></button>
+            <button id="bl-2" class="button"></button>
+            <button id="bl-3" class="button"></button>
+            <button id="bl-4" class="button"></button>
+            <button id="bl-5" class="button"></button>
+            <button id="bl-6" class="button"></button>
+            <button id="bl-7" class="button"></button>
+            <button id="bl-8" class="button"></button>
+            <button id="bl-9" class="button"></button>
+          </div>
+        </div>
+      </section>
+      <section class="panel panel--right">
+        <div id="inside-panel--right" class="inside-panel">
+          <div class="buttons buttons--right">
+            <button id="br-1" class="button"></button>
+            <button id="br-2" class="button"></button>
+            <button id="br-3" class="button"></button>
+            <button id="br-4" class="button"></button>
+            <button id="br-5" class="button"></button>
+            <button id="br-6" class="button"></button>
+            <button id="br-7" class="button"></button>
+            <button id="br-8" class="button"></button>
+            <button id="br-9" class="button"></button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="js/control-panel.js"></script>
+</body>
+</html>
